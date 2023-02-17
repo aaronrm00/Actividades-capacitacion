@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <!--Permite ingresar texto en el recuadro-->
+        <input type="text" placeholder="Inserte texto">
+
+        <!--Permite seleccionar el input que lo tiene
+        que empesar el usuario-->
+        <input type="text" autofocus>
+
+        <!--autocomplete en off no permite dar opciones preguardadas-->
+        <input type="text" autocomplete="off">
+
+        <!--Permite elegir varios elementos con ctrl-->
+        <select multiple>
+            <option value="">Elemento 1</option>
+            <option value="">Elemento 2</option>
+            <option value="">Elemento 3</option>
+        </select><br><hr>
+
+        <!--VALIDACIONES-->
+        <!--se hace del lado del cliente y del servidor
+        restringiendo el tipo de datos que se deben ingresar-->
+
+        <!--texto que no puede estar vacio-->
+        <input type="text" required>
+
+        <!--puedo tener cualquier tipo de texto, pero aqui
+        esta desabilitado, entonces no se podra enviar
+        (bloqueado)-->
+        <input type="text" disabled>
+
+        <!--Es texto que defino para enviar y que no puede
+        modificar el usuario-->
+        <input type="text" readonly value="Texto no escrito por el usuario">
+
+        <!--numero con rango-->
+        <input type="number" min="5" max="20" placeholder="5 al 20" title="Numeros del 5 al 20">
+
+        <!--contraseña con un num de caracteres minimo y maximo-->
+        <input type="password" minlength="5" maxlength="8">
+
+        <!--quiero 2 caracteres mayusculas entre A y Z
+        y quiero 3 numeros entre 0 y 9-->
+        <input type="text" pattern="[A-Z]{2}[0-9]{3}" placeholder="Patron" title="Dos letras y tres numeros">
+
+        <!---->
+        <input type="submit">
+    </form>
+</body>
+</html>

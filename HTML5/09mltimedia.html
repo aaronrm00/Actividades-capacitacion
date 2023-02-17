@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---->
+    <!--IMAGEN-->
+    <!--alt permite encontrar el atribto en motores de busqueda
+    o indicar a una persona invidente de que se trata la imagen-->
+    <img src="archivos/emeploprog.png" alt="Imagen de ejemplo">
+    <br><br><hr>
+    <!--IMAGENES COMBINADAS-->
+    <!--Es un contenedor de imagen-->
+    <figure>
+        <img src="archivos/emeploprog.png" alt="" width="200px" height="250px">
+        <img src="archivos/work.png" alt=""width="200px" height="250px">
+        <img src="archivos/codigoimage.jpg" alt="" width="200px" height="250px">
+        <figcaption>Pie de pagina para todo el contenedor</figcaption>
+    </figure>
+    <br><br><hr>
+
+    <!--VIDEOS-->
+    <!--controls muestra controles del video, autoplay reproduce automaticamente el video,
+    loop manteiene el ciclo cuando termine el video, poster permite cargar una imagen
+    antes de iniciar el video portada del video-->
+    <video src="" controls  autoplay loop poster="archivos/work.png"></video>
+    <br><br><hr>
+
+    <!--SUBTITULO EN VIDEO-->
+    <!--source permite dar la fuente, si el navegador no soporta mp4 se va al otro formato-->
+    <video controls>
+        <source src=".mp4">
+        <source src=".avi">
+        <!--track permite cargar un archivo de subtitulo, srclang dice que lenguaje es, label el que le aparece al usuario
+        y default es el que lo hace por defecto-->
+        <track src="subs-es.vtt" srclang="es" label="Español" default>
+        <track src="subs-en.vtt" srclang="en" label="Ingles">
+    </video>
+    <br><br><hr>
+
+
+    <!--VIDEOS DE YOUTUBE-->
+    <!--voy al video en youtube, le doy compartir y selecciono incorporar para
+    copiar el codigo, iframe trae objetos externos-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PuRVbbzvSlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br><br><hr>
+
+
+    <!--AUDIO-->
+    <!--audio es la etiqueta, src para dar la direccion donde este el audio-->
+    <audio src="" controls loop autoplay poster></audio>
+</body>
+</html>
