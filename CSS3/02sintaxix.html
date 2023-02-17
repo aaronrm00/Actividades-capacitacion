@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxis CSS3</title>
+<!--h1 es el selector y color la propiedad
+para llamar por ID se utiliza "#" para llamarlo
+.grupoparrafos es una clase-->
+        <!--SELECTOR DE ESTADO, con hover,
+         cuando pase el mouse por encima se va a poner de un
+          color
+        
+        para color a un atributo, como lo es input, pero solo de tipo
+    type text, se va agregar al selector"[type="text"]
+
+    con * hago que todo tenga un color, pero para que lo consibere
+debo darle mayor gerarquia a traves de "!important"-->
+    <style>
+        h1{
+            color: violet;
+        }
+
+        #primerparrafo{
+            color: green;
+        }
+
+        .grupoparrafos{
+            color:blue;
+        }
+
+        h1:hover{
+                color: black;
+        }
+
+        input[type="text"]{
+            background-color: aqua;
+        }
+
+        *{
+            color: red !important;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Titulo de la pagina</h1>
+    <br>
+    <p id="primerparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio necessitatibus itaque sequi facilis nobis inventore modi aliquid quo. Architecto sequi dolores aperiam nemo eligendi quibusdam inventore earum, vero consectetur ipsam?</p>
+    <br>
+    <!--Para aplicar la propiedad de la clase se debe poner class-->
+    <p class="grupoparrafos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus aliquid quasi reprehenderit nulla obcaecati! Fugit vero sequi, fuga, corporis similique magnam dolorem molestiae maiores sit eius atque aperiam voluptatum.</p>
+    <br>
+    <p class="grupoparrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum doloremque recusandae nobis vitae, nesciunt, modi id, natus illo aspernatur repudiandae architecto eius autem deleniti magni veritatis vel. Corrupti, amet consequuntur.</p>
+    <input type="text">
+    <input type="number">
+</body>
+</html>

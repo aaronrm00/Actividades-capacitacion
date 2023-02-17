@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja</title>
+    
+    <style>
+        div{
+            background-color: aquamarine;
+            width: 300px;
+            height: 300px;
+
+            /*tamaño maximo a crecer*/
+            max-width: 400px;
+            /*tamaño minimo*/
+            min-width: 300px;
+
+            /*miximo alto*/
+            max-height: 400px;
+            /*minimo*/
+            min-height: 300px;
+
+            /*Padding separacion del contenido y el borde de caja*/
+            padding-top: 20px;
+            /*padding izq.*/
+            padding-left: 30px;
+            /*padding derecha*/
+            padding-right: 50px;
+            /*padding abajo*/
+            padding-bottom: 20px;
+
+            /*Padding por atajo (a cada lado)*/
+            padding: 50px;
+            /*se asigna valor a acada uno, en sentido horario*/
+            padding: 80px 60px 20px 35px;
+
+
+            /*BORDE*/
+            /*border width aplica a todos sus lados
+            si antes de width agregamos top, left, voy agregando uno por uno*/
+            border-top-width: 10px;
+            border-left: 20px;
+            border-bottom: 30px;
+            border-right: 20px;
+            border-color: black;
+            /*con border style lo hago visible*/
+            border-style: solid;
+
+            /*simplifico todo lo anterior*/
+            border: 10px solid black;
+
+            /*borde redondeado*/
+            border-radius: 30%;
+
+            /*MARGIN distancia fuera de la caja*/
+            margin-top: 100px;
+            margin-left: 200px;
+            margin-right: 50px;
+            margin-bottom: 500px;
+
+            /*margen general*/
+            margin: 50px;
+            /*margen arriba, derecha, abajo e izquierda*/
+            margin: 50px 90px 20px 5px;
+
+           
+            
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe ea distinctio aliquam facere, in modi ad magnam consequuntur maiores consectetur culpa qui quod error laborum autem aliquid laudantium accusamus architecto.</p>
+        <a href="https://www.cssmatic.com/border-radius">Genera dordes personalizados</a>
+    </div>
+</body>
+</html>

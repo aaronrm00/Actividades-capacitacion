@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondos CSS3</title>
+
+    <style>
+        #contenedor{
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+
+            /*FONDO PLANO*/
+            background-color: #69f1abd1;
+
+            /*FONDO DEGRADADO O GRADIENTE*/
+            background: linear-gradient(90deg, blue, orange);
+            background: radial-gradient(green, orange);
+
+            /*IMAGEN DE FONDO*/
+            
+            background-image: url(archivos/prog.jpg);
+            /*no-repeat: una vez
+            attachment: sea fija con fixe, no se mueve aunque yo baje (fija en el fondo)
+            o scroll, el respeta el tamaño y esta estatico en el cuadro*/
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            /*digo en que zona lo quiero poner*/
+            background-position: center;
+            /*con cover ocupo todo el cuadro(contenedor) con mi imagen*/
+            background-size: cover;
+            
+            
+            /*FORMA SINTETIZADA
+            --dejo esta o la anterior--*/
+            /*url,no-repeat, attachmen, posision*/
+            /*el color es por si la imagen es pequeña, se muestre un fondo de ese color*/
+            /*size va aparte*/
+            background: #000000 url(archivos/prog.jpg) no-repeat scroll center;
+            background-size: cover;
+        }
+
+        #contenido{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(34, 155, 64, 0.8);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="contenedor">
+        <div id="contenido"></div>
+    </div>
+    
+    
+</body>
+</html>

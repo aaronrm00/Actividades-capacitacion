@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores avanzados</title>
+    <!--el segundo es un estilo de estado para el primer hijo
+    con "p:nth-child, especifico a cual selecciono, con numero"
+    con"odd" aplico a impares con "even" a los pares
+    con last child aplico al ultimo hijo
+        VA A CONSIDERAR COMO HIJO A TODOS LOS ELEMENTOS, INCLUIDOS LOS SALTOS DE LINEA
+-->
+    <style>
+        #contenedor p{
+            color: darkgreen;
+        }
+
+        #contenedor p:first-child{
+            color: coral;
+        }
+
+        #contenedor p:nth-child(2){
+            color: purple;
+        }
+
+        #contenedor p:last-child{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam eligendi deserunt nulla cum natus odit totam? Sit eum quod molestiae nobis, excepturi optio et voluptatum molestias magni accusantium velit tempore.</p>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nostrum reiciendis nam vel sint culpa eum ipsam, voluptas asperiores tempora nemo temporibus laborum quia aspernatur ipsum quasi dicta dolorem odit!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit adipisci corrupti aliquid incidunt dolor! Alias et, commodi iure dolorem eos, odio, similique rerum doloremque perferendis accusamus incidunt omnis voluptatem possimus?</p>
+        
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod distinctio laborum harum porro dolorem doloribus magni alias voluptas sapiente est culpa, esse molestiae possimus, animi ut recusandae libero dolorum vel.</p>
+        
+
+    </div>
+</body>
+</html>

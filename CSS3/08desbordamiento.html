@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbordamiento en CSS3</title>
+
+    <style>
+        p{
+            margin: 0;
+        }
+
+        #desbordamiento{
+            width: 200px;
+            height: 200px;
+            background-color: #ffdb39;
+
+            /*Desbordamiento*/
+            /*4 valores
+            --visible--:por defecto, no cabe el texto
+            --hidedn-- cuando llegue al limite, el texto que no cabe lo va a ocupar
+            --scroll-- puedo deslizar el texto dentro de la caja para verlo
+            si el texto ocupa toda la caja, aun asi se muestra el scroll
+            --auto-- detecta cuando necesito el scroll o no*/
+            overflow: auto;
+        }
+
+        #despliegue{
+            /*Especifico cuantas columnas quiero*/
+            column-count: 3;
+            /*permite utilizar el espacio entre parrafo*/
+            column-gap: 5em;
+            /*creo una linea divisora
+            tamaño, estilo de linea, color*/
+            column-rule: 5px dashed green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="desbordamiento">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quis! Totam iste minus perferendis ad, esse dolorem doloribus quibusdam illum recusandae qui cupiditate magnam debitis error, cumque cum ratione aliquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis commodi itaque iste eligendi iure hic? Cumque ipsam dolorum voluptate provident magni, reiciendis voluptatem rerum sed, eveniet omnis quidem nobis maxime.</p>
+    </div>
+    <br>
+
+    <div id="despliegue">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum asperiores minima eligendi commodi facilis exercitationem culpa, aperiam placeat quis sint id expedita tempora distinctio molestiae esse corrupti recusandae aliquid tempore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, doloribus assumenda voluptas dicta debitis nulla eveniet sequi natus impedit alias ullam fugit facilis veniam porro ipsum rerum cupiditate, aliquam quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptatem fugiat quae maxime at quasi, soluta itaque rem nihil sunt illo? Ipsam nisi consectetur veniam doloribus, temporibus voluptas cum alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugit atque inventore obcaecati, sunt voluptatem illo sapiente, repellat deleniti debitis aspernatur. Totam amet qui harum odio. At nulla dicta voluptatibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi non illo quibusdam adipisci eos. In repellat velit, delectus voluptate aliquam officiis praesentium ea dolorem maiores pariatur amet mollitia aperiam fugit.</p>
+    </div>
+    
+</body>
+</html>
