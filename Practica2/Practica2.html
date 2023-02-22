@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Practica2estilos.css">
+    <title>Formulario Cotizador</title>
+
+
+</head>
+<body>
+    <form action="">
+        <div class="titulo">
+            <label for="">COTIZADOR</label>
+        </div>
+
+        <div class="dos-colum">
+            <div class="dos-renglones">
+                <label for="">CLIENTE</label>
+                <input type="text" placeholder="Nombre del cliente" required>
+            </div>
+
+            <div class="dos-renglones">
+                        <!--<input id="default-env" type="file" hidden>
+                        <button onclick = "defaultenvActive()" id="image-s">Choose a file</button>
+                        -->
+                        <button onclick="defaultBtnActive()" id="enviar-vis">AÑADIR IMAGEN</button>
+                        <input id="enviar-inv" type="file" hidden>
+            </div>
+        </div>
+
+        <div class="dos-colum">
+            
+            <div class="dos-renglones">
+                <label for="">PROOVEDOR</label>
+                        <select name="" id="">
+                            <option selected>Tipo de proveedor</option>
+                            <option value="1">Nivel 1</option>
+                            <option value="2">Nivel 2</option>
+                            <option value="3">Nivel 3</option>
+                        </select>
+            </div>
+
+            <div class="dos-renglones">
+                <input type="text" id="rfc" placeholder="RFC" required>
+            </div>
+        </div>
+
+        <div class="dos-colum">
+            <div class="dos-renglones">
+                <label for="">RECURSO</label>
+                        <select name="" id="">
+                            <option selected>Tipo de recurso</option>
+                            <option value="1">Clase A</option>
+                            <option value="2">Clase B</option>
+                            <option value="3">Clase C</option>
+                        </select>
+            </div>
+
+            <div class="dos-renglones">
+                
+                <a href="#" class="cta">AÑADIR RECURSO</a>
+
+            </div>
+        </div>
+        
+
+        <div class="porcentaje">
+            <input type="num" name="" id="porce" placeholder="PORCENTAJE" required>  
+
+        </div>
+
+        <div class="bt-enviar">
+            <button type="submit" id="enviar">GENERAR RESPUESTA</button>
+
+        </div>
+
+    </form>
+    <section>
+
+<div class="modal">
+    <div class="modal__container">
+       <img src="archivos/undraw_static_website_re_x70h.svg" class="modal__img">
+       <h2 class="modal__title">HAS ABIERTO UNA VENTANA MODAL</h2>
+       <p class="modal__paragraph">Al añadir recurso abriste ua ventana modal</p>
+       <a href="#" class="modal__close">X</a>
+    </div>
+</div>
+    </section>
+
+
+    <script src="main.js">    </script>
+    
+</body>
+</html>
