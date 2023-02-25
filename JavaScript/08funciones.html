@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JS</title>
+</head>
+<body>
+    <script>
+        /*fragmento de codigo que se puede reutilizar 
+        nombre (parametros){instrucciones}
+        function holamundo(){
+            document.write("Hola mundo");
+        }
+
+        holamundo();*/
+
+        /*function resta(v1,v2){
+            var resultado = v1-v2;
+            return resultado;
+        }
+
+        document.write(resta(50,30));*/
+
+        //puedo almacenar en una variable la funcion
+
+        /*var resta = function (v1,v2){
+            var resultado = v1-v2;
+            return resultado;
+        }
+
+        document.write(resta(50,30));*/
+
+        //variable global= para cualquier funcion de JS
+        var varglobal ="Variable global :0";
+        
+
+        var valormin = function (v1,v2){
+            //variable local=solo para la funcion
+            var varlocal = "Variable local";
+            if(v1 < v2){
+                return v1;
+            }else{
+                return v2;
+            }
+        }
+
+        document.write(valormin(55,80));
+        document.write("<br>");
+        document.write(valormin(900,80));
+    </script>
+    
+</body>
+</html>

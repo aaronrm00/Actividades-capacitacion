@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body> <script>
+        var nombre = "Aaron";
+        var edad = 22;
+        /*if(edad ==27){
+            //si se cumple
+            document.write("si se cumple la condicio");
+
+        }
+        else if(nombre=="Aaron"){
+            //segunda condicion opcional
+            document.write("si!, mi nombre es "+nombre);
+
+        }
+        else{
+            //si no se cumple ninguna de las anteriores
+            document.write("No se cumplio la condicion ):");
+        }*/
+
+        /*CONDICIONES
+        > mayor
+        < menor
+        > mayor o igual
+        <= menor o igual
+        == igual que
+        === comprobar que la variable tenga el valor y sea del mismo tipo
+        != distinto de
+        && operador logico and
+        !! operador logico de OR*/
+
+        /*if(edad>=18 ){
+            document.write("Puedes acceder");
+        }
+        else{
+            document.write("No tienes 18");
+        }*/
+
+        //verificar el mismo tipo de dato
+        //edad es de tipo numerico y "18" es una cadena de texto, sin comillas ya es numerico
+        /*if(edad === "18"){
+            document.write("Puedes acceder");
+        }
+        else{
+            document.write("No puedes acceder")
+        }
+        */
+
+        /*con and se deben cumplir toddas las condiciones
+        con or se cumple con que se cumpla al menos una de las condiciones*/
+        if(edad === 18 && "Aaron"){
+            document.write("Puedes acceder");
+        }
+        else{
+            document.write("No puedes acceder")
+        }
+
+
+        //CODIGO MIO
+        /*var nombre=prompt("ingrese nombre");
+        var edad=prompt("ingrese su edad");
+        if(edad>=18 ){
+            document.write("Hola "+nombre+" tienes "+edad+". Puedes acceder");
+        }
+        else{
+            document.write("Hola "+nombre+" tienes "+edad+", necesitas tener por lo menos 18");
+        }*/
+
+
+    </script>
+    
+</body>
+</html>

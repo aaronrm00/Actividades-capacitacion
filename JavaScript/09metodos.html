@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos de cadenas JS</title>
+</head>
+<body>
+    <script>
+        var minombre = "Aaron Romero";
+
+        /*metodo lenght = Cantidad de elementos ya sea arreglos o caracteres
+        var texto = minombre.length;*/
+
+
+        /*//METODO SUBSTRING = coerta una cadena de texto donde le indique y 
+        muestra el restante a la izquierda despues del corte
+        var texto = minombre.substring(8);*/
+
+        /*METODO SUBSTR = pasa 2 parametros, donde inicia y hasta donde va a
+         mostrar
+        var texto = minombre.substr(0,7);*/
+
+        /*//INDEX OFF= dice en que posicion se encunetra cada elemento
+        con ("o,2") indico que desde la pos 2 en adelante busque
+        var texto=minombre.indexOf("A");
+        //con lastIndexOf busco de derecha a izquierda
+        var texto=minombre.lastIndexOf("e");*/
+
+        /*//METODO REPLACE= remplaza cadena de texto, caracter, etc
+        el primero valor es lo que quiero reemplazar (nombre de la cadena o
+         variable) el segundo le digo con que quiero reemplazar
+        var texto=minombre.replace(minombre,"Yo soy el nuevo");
+        var texto=minombre.replace("Aaron","Yo soy el nuevo");*/
+
+        /*//METODO toUpperCase = transforma a mayuscula
+        var texto = minombre.toUpperCase();*/
+
+        /*//METODO toLowerCase = transforma todo en minusculas*/
+        var texto = minombre.toLowerCase();
+
+
+        document.write(texto);
+    </script>
+    
+</body>
+</html>
